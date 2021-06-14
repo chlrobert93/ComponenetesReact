@@ -22,3 +22,6 @@ const commentDetail = () => {
 
     );
 };
+
+//Esta linea hace que nuestro componente estédiponible para el resto de nuestro proyecto
+export default   commentDetail;
