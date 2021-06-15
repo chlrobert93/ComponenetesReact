@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import faker  from 'faker';
 import CommentDetails from './CommentDetails';
+import ApprovaCard from './ApprovalCard';
 
 
 //Crear componente
 const App = () => {
     return (
       <div className="ui  container comments">
+        <ApprovaCard/>
         <CommentDetails
           src={faker.image.avatar()}
           author="Pepe"
