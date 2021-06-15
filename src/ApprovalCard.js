@@ -12,6 +12,13 @@ const ApprovalCard  = props => {
                </div>
            </div>
        </div>
+       
+
+
+
+
+
+
     );
 
 };
