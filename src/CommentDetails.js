@@ -1,22 +1,23 @@
 import React from 'react';
-import faker from 'faker';
 
-const commentDetail = props => {
+//Props recibe los datos
+//Tiene todala información que se pasó del padre
+const CommentDetails = props => {
     console.log(props);
     return (
           
         <div className="comment">
         <a href="/" className="avatar">
-            <img alt ="avatar" src={faker.image.avatar()}></img>
+            <img alt ="avatar" src={props.avatar}></img>
         </a>
         <div className="content">
             <a href="/" className="author">
             {props.author}
             </a>
             <div className="metadata">
-                <span className="date">Today at 6:00pm</span>
+                <span className="date">{props.timeAgo}</span>
             </div>
-            <div className="text">Nice blog post!</div>
+            <div className="text">{props.comenText}</div>
         </div>
     </div>
 
@@ -25,4 +26,4 @@ const commentDetail = props => {
 };
 
 //Esta linea hace que nuestro componente estédiponible para el resto de nuestro proyecto
-export default   commentDetail;
+export default   CommentDetails;
