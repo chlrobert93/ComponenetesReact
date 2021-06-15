@@ -3,7 +3,7 @@ import React from 'react';
 //Props recibe los datos
 //Tiene todala información que se pasó del padre
 const CommentDetails = props => {
-    console.log(props);
+
     return (
           
         <div className="comment">

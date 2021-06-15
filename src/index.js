@@ -9,7 +9,7 @@ import ApprovaCard from './ApprovalCard';
 const App = () => {
     return (
       <div className="ui  container comments">
-        <ApprovaCard/>
+        <ApprovaCard>
         <CommentDetails
           src={faker.image.avatar()}
           author="Pepe"
@@ -17,6 +17,8 @@ const App = () => {
           comenText="Nice blog post!"
           avatar={faker.image.avatar()}
         />
+        </ApprovaCard>
+     
         <CommentDetails
           author="Juan"
           timeAgo="Today at 2:00AM"
